@@ -25,7 +25,7 @@ What is visible:
 
 Access recorded execution:
 
-→ [Arquitectura Simbiótica Repository]
+→ [Arquitectura Simbiótica Repository](https://github.com/gamc-core/Arquitectura_Simbiotica)
 
 Contains the execution history of a node running under ENDO / ENDO NODE.
 
