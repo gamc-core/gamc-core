@@ -1,23 +1,23 @@
 # Arquitectura Simbiótica
 
-A structural architecture defining the conditions under which execution produces irreversible records and systems emerge and persist through history.
+A system where execution produces irreversible records.
 
 ---
 
 ## CONTEXT
 
-This is an exposed system in execution.
+This is a system in execution.
 
-Arquitectura Simbiótica defines the structural conditions.  
-ENDO implements them as protocol.  
-ENDO NODE executes them as runtime.
+Arquitectura Simbiótica defines the structure.  
+ENDO implements it as protocol.  
+ENDO NODE executes it as runtime.  
 
-What is visible are:
+What is visible:
 
 - irreversible records  
 - execution traces  
-- recorded history  
-- derived artifacts  
+- history  
+- artifacts  
 
 ---
 
@@ -25,7 +25,7 @@ What is visible are:
 
 Access recorded execution:
 
-[Arquitectura Simbiótica Repository](https://github.com/gamc-core/Arquitectura_Simbiotica)
+→ [Arquitectura Simbiótica Repository]
 
 Contains the execution history of a node running under ENDO / ENDO NODE.
 
@@ -33,39 +33,20 @@ Contains the execution history of a node running under ENDO / ENDO NODE.
 
 ## STRUCTURAL LAYERS
 
-### Framework
+### Structure  
+Arquitectura Simbiótica  
 
-- Arquitectura Simbiótica  
+### Protocol  
+ENDO  
 
----
+### Execution  
+NODE → ORIGIN → CELL → GENERATION  
 
-### Structural Protocol
+### Exposure  
+EXECUTION TRACE → SNAPSHOT → LATEST  
 
-- ENDO  
-
----
-
-### Execution
-
-- NODE  
-- ORIGIN  
-- CELL  
-- GENERATION  
-
----
-
-### Exposure
-
-- EXECUTION TRACE  
-- SNAPSHOT  
-- LATEST  
-
----
-
-### Derived
-
-- TRAJECTORY  
-- ARTIFACTS  
+### Derivation  
+TRAJECTORY → ARTIFACTS  
 
 ---
 
@@ -75,9 +56,8 @@ Active node:
 
 → node00-gamc  
 
-Execution is ongoing.  
-
-History accumulates.
+Execution is active.  
+History accumulates.  
 
 ---
 
@@ -87,19 +67,19 @@ Execution produces irreversible records.
 Records accumulate as history.  
 History reveals structure.  
 
-Structure persists.
+Structure persists.  
 
 ---
 
 ## NOTE
 
-The runtime is not exposed.  
+Runtime not exposed.
 
 Only:
 
 - history  
 - traces  
-- derived structure  
+- artifacts  
 
 are public.
 
@@ -108,4 +88,4 @@ are public.
 ## AUTHOR
 
 Gonzalo Montero Cavero  
-Architect - Arquitectura Simbiótica
+Architect — Arquitectura Simbiótica
