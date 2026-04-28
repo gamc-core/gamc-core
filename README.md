@@ -1,91 +1,63 @@
-# Arquitectura Simbiótica
+# Arquitectura Simbiótica  
 
-A system where execution produces irreversible records.
+A multi-layer architecture for structuring human–system execution.
 
----
+This profile exposes a layer enforcing bounded, irreversible, and auditable execution.
 
-## CONTEXT
+— — —
 
-This is a system in execution.
+## CONTEXT  
 
-Arquitectura Simbiótica defines the structure.  
-ENDO implements it as protocol.  
-ENDO NODE executes it as runtime.  
+Most execution systems allow modification after the fact.
 
-What is visible:
+— — —
 
-- irreversible records  
-- execution traces  
-- history  
-- artifacts  
+### It enforces:
 
----
+— bounded execution  
+— irreversible execution  
+— append-only recording  
+— deterministic structural validation  
 
-## ENTRY
+— — —
+
+### Result:
+
+Execution becomes:
+
+— fixed  
+— auditable  
+— reproducible  
+
+— — —
+
+### What you can do here:
+
+— observe execution under explicit conditions  
+— audit traces, criteria, and outcomes  
+— inspect and execute structural artifacts  
+
+— — —
+
+## ENTRY  
 
 Access recorded execution:
 
-→ [Arquitectura Simbiótica Repository](https://github.com/gamc-core/Arquitectura_Simbiotica)
+→ [ARQUITECTURA SIMBIÓTICA REPOSITORY]( https://github.com/gamc-core/Arquitectura_Simbiotica) 
 
-Contains the execution history of a node running under ENDO / ENDO NODE.
+### Contains:
 
----
+— execution history  
+— structural layers  
+— derived artifacts  
+— closed traces from bounded execution  
 
-## STRUCTURAL LAYERS
+— — —
 
-### Structure  
-Arquitectura Simbiótica  
+This is not a tool or framework.  
+It is an execution system.
 
-### Protocol  
-ENDO  
-
-### Execution  
-NODE → ORIGIN → CELL → GENERATION  
-
-### Exposure  
-EXECUTION TRACE → SNAPSHOT → LATEST  
-
-### Derivation  
-TRAJECTORY → ARTIFACTS  
-
----
-
-## CURRENT STATE
-
-Active node:
-
-→ node00-gamc  
-
-Execution is active.  
-History accumulates.  
-
----
-
-## PRINCIPLE
-
-Execution produces irreversible records.  
-Records accumulate as history.  
-History reveals structure.  
-
-Structure persists.  
-
----
-
-## NOTE
-
-Runtime not exposed.
-
-Only:
-
-- history  
-- traces  
-- artifacts  
-
-are public.
-
----
-
-## AUTHOR
+— — —
 
 Gonzalo Montero Cavero  
 Architect — Arquitectura Simbiótica
