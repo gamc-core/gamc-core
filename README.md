@@ -57,6 +57,7 @@ Access recorded execution:
 This is not a tool or framework.  
 It is an execution system.
 
+Part of a larger symbiotic architecture.
 — — —
 
 Gonzalo Montero Cavero  
