@@ -35,7 +35,7 @@ Execution becomes:
 
 — observe execution under explicit conditions  
 — audit traces, criteria, and outcomes  
-— inspect and execute structural artifacts  
+— inspect and reproduce structural artifacts  
 
 — — —
 
@@ -58,6 +58,7 @@ This is not a tool or framework.
 It is an execution system.
 
 Part of a larger symbiotic architecture.
+
 — — —
 
 Gonzalo Montero Cavero  
