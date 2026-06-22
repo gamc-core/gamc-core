@@ -1,65 +1,131 @@
-# Arquitectura Simbiótica  
+# Gonzalo Montero · Arquitectura Simbiótica
 
-A multi-layer architecture for structuring human–system execution.
+> Artefactos públicos sobre continuidad, reconstrucción y ejecución estructurada.
 
-This profile exposes a layer enforcing bounded, irreversible, and auditable execution.
 
-— — —
+Lo que suele perderse primero no es el resultado.
 
-## CONTEXT  
+Meses después de una decisión todavía podemos ver qué ocurrió. Lo difícil suele ser reconstruir cómo ocurrió, qué cambió y qué permanece después del cambio.
 
-Most execution systems allow modification after the fact.
+Cuando esa capacidad se pierde aparecen problemas reales: conocimiento difícil de transferir, sistemas difíciles de mantener, decisiones difíciles de revisar y procesos difíciles de continuar.
 
-— — —
+Aunque los dominios cambien, ese problema suele repetirse.
 
-### It enforces:
+De ahí surge una pregunta:
 
-— bounded execution  
-— irreversible execution  
-— append-only recording  
-— deterministic structural validation  
 
-— — —
+## ¿Qué debe permanecer para que un cambio siga siendo comprensible a través del tiempo?
 
-### Result:
 
-Execution becomes:
+Gran parte de mi trabajo gira alrededor de preservar la capacidad de reconstruir cómo ocurrió una ejecución después de que fue cerrada.
 
-— fixed  
-— auditable  
-— reproducible  
+Las familias de artefactos publicadas aquí observan distintas partes de esa pregunta.
 
-— — —
+Representan condiciones, ejecuciones y evidencias preservadas alrededor de problemas específicos.
 
-### What you can do here:
+Cada artefacto responde una pregunta acotada.
 
-— observe execution under explicit conditions  
-— audit traces, criteria, and outcomes  
-— inspect and reproduce structural artifacts  
 
-— — —
+---
 
-## ENTRY  
+## Navegación
 
-Access recorded execution:
+### ¿Qué debe ocurrir para que una estructura pueda persistir a través del tiempo?
 
-→ [ARQUITECTURA SIMBIÓTICA REPOSITORY]( https://github.com/gamc-core/Arquitectura_Simbiotica) 
+[CE — Conditions of Executability](#ce--conditions-of-executability)
 
-### Contains:
+### ¿Cómo se comporta un sistema frente a distintos estados operativos?
 
-— execution history  
-— structural layers  
-— derived artifacts  
-— closed traces from bounded execution  
+[CPR — Conditions of Operational Regulation](#cpr--conditions-of-operational-regulation)
 
-— — —
+### ¿Cuándo una unidad puede considerarse un artefacto?
 
-This is not a tool or framework.  
-It is an execution system.
+[AF — Artifact Qualification](#af--artifact-qualification)
 
-Part of a larger symbiotic architecture.
+### ¿Cómo puede observarse una ejecución después de que ocurrió?
 
-— — —
+[ENDO — Execution History](#endo--execution-history)
 
-Gonzalo Montero Cavero  
-Architect — Arquitectura Simbiótica
+
+---
+
+## CE — Conditions of Executability
+
+CE reúne mecanismos mínimos para registrar, cerrar y continuar estructuras preservando su historia.
+
+Cada artefacto responde una condición distinta:
+
+**registro → cierre → continuidad**
+
+| Artefacto | Pregunta |
+|------------|------------|
+| [CE-01](https://github.com/gamc-core/CE01-executable-structural-cell) | ¿Cómo registrar una unidad persistente y verificable? |
+| [CE-02](https://github.com/gamc-core/CE02-Deterministic-Cycle-Engine) | ¿Cómo cerrar un conjunto de unidades bajo una condición explícita? |
+| [CE-03](https://github.com/gamc-core/CE03-Generational-Structural-Runtime) | ¿Cómo continuar sin modificar lo ya cerrado? |
+
+
+---
+
+## CPR — Conditions of Operational Regulation
+
+CPR reúne ejecuciones orientadas a observar cómo un regulador modifica su comportamiento frente a distintos estados operativos.
+
+Cada artefacto preserva una condición operativa observada sobre un entorno Windows real.
+
+**intervención → retirada → recuperación → saturación → reconsideración**
+
+| Artefacto | Pregunta |
+|------------|------------|
+| [CPR-006](https://github.com/gamc-core/CPR-006-Homeostatic-regulation-with-structural-distinction) | ¿Dónde intervenir cuando la causa dominante no debe modificarse directamente? |
+| [CPR-009](https://github.com/gamc-core/CPR-009-Baseline-relative-withdrawal) | ¿Cuándo debe retirarse una intervención? |
+| [CPR-013](https://github.com/gamc-core/CPR-013-Confirmed-recovery-dissipative-memory) | ¿Cuándo puede considerarse recuperado un sistema? |
+| [CPR-014](https://github.com/gamc-core/CPR-014-Operational-Saturation-Clamp) | ¿Cuándo deja de tener sentido seguir interviniendo? |
+| [CPR-015](https://github.com/gamc-core/CPR-015-Post-clamp-meta-regulation) | ¿Cuándo debe reconsiderarse una detención previa? |
+
+
+---
+
+## AF — Artifact Qualification
+
+AF explora las condiciones necesarias para que una unidad pueda calificarse como artefacto y los mecanismos utilizados para verificarlo.
+
+**protocolo → validación**
+
+| Artefacto | Pregunta |
+|------------|------------|
+| [AF01](https://github.com/gamc-core/AF01-Artifact_Structural_Protocol) | ¿Qué condiciones debe cumplir una unidad para calificar como artefacto? |
+| [AF02](https://github.com/gamc-core/AF02-Artifact-Validator-Engine) | ¿Cómo verificar esas condiciones de forma determinista? |
+
+
+---
+
+## ENDO — Execution History
+
+Ventana observable sobre la historia registrada por un sistema de ejecución persistente y cierre generacional.
+
+Cada generación conserva registros, estados y artefactos derivados sin modificar lo ya cerrado.
+
+**registro → generación → trayectoria**
+
+| Repositorio | Pregunta |
+|------------|------------|
+| [ENDO](https://github.com/gamc-core/ENDO) | ¿Qué puede reconstruirse de una ejecución después de que fue registrada y cerrada? |
+
+
+---
+
+## Alcance
+
+Los artefactos publicados permanecen accesibles en el estado en que fueron cerrados.
+
+Esta capa pública muestra preguntas, mecanismos, ejecuciones y evidencia derivada.
+
+No pretende describir la arquitectura completa ni la totalidad de sus procesos internos.
+
+Tampoco pretende establecer modelos universales ni afirmar que las condiciones observadas sean válidas fuera de los contextos donde fueron ejecutadas.
+
+Otras familias y mecanismos continúan en proceso de documentación o publicación.
+
+---
+
+GAMC
