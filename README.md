@@ -17,7 +17,7 @@ De ahí surge una pregunta:
 ## ¿Qué debe permanecer para que un cambio siga siendo comprensible a través del tiempo?
 
 
-Gran parte de mi trabajo consiste en construir mecanismos para registrar, cerrar y reconstruir ejecuciones después de que ocurrieron.
+Gran parte de mi trabajo consiste en construir mecanismos para registrar, cerrar y preservar ejecuciones de forma que puedan seguir siendo observables y reconstruibles a través del tiempo.
 
 Las familias de artefactos publicadas aquí reúnen mecanismos construidos alrededor de distintas partes de esa pregunta.
 
