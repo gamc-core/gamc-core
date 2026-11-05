@@ -7,9 +7,9 @@ Me interesa cómo las intenciones toman forma, atraviesan transformaciones y pue
 
 Parte de mi investigación consiste en construir y probar mecanismos para registrar ejecuciones, verificar sus condiciones y preservar suficiente información para comprender qué ocurrió, qué cambió y cómo continuar.
 
-**El problema no es únicamente producir un resultado.** Cuando se pierde la historia de cómo se produjo, las decisiones se vuelven difíciles de revisar, los sistemas de mantener y el trabajo de continuar.
+El problema no es únicamente producir un resultado. Cuando se pierde la historia de cómo se produjo, las decisiones se vuelven difíciles de revisar, los sistemas de mantener y el trabajo de continuar.
 
-Los mecanismos publicados exploran cómo preservar y verificar esas condiciones mediante **prototipos ejecutables, experimentos acotados y evidencia de sus resultados y límites**.
+Los mecanismos publicados exploran cómo preservar y verificar esas condiciones mediante prototipos ejecutables, experimentos acotados y evidencia de sus resultados y límites.
 
 ---
 
