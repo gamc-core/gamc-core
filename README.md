@@ -1,131 +1,114 @@
+
 # Gonzalo Montero · Arquitectura Simbiótica
 
-> Artefactos públicos sobre continuidad, reconstrucción y ejecución estructurada.
+> Mecanismos experimentales de ejecución, verificación, continuidad y reconstrucción.
 
+Me interesa cómo las intenciones toman forma, atraviesan transformaciones y pueden continuar sin perder su historia.
 
-Lo que suele perderse primero no es el resultado.
+Parte de mi investigación consiste en construir y probar mecanismos para registrar ejecuciones, verificar sus condiciones y preservar suficiente información para comprender qué ocurrió, qué cambió y cómo continuar.
 
-Meses después de una decisión todavía podemos ver qué ocurrió. Lo difícil suele ser reconstruir cómo ocurrió, qué cambió y qué permanece después del cambio.
+**El problema no es únicamente producir un resultado.** Cuando se pierde la historia de cómo se produjo, las decisiones se vuelven difíciles de revisar, los sistemas de mantener y el trabajo de continuar.
 
-Cuando esa capacidad se pierde aparecen problemas reales: conocimiento difícil de transferir, sistemas difíciles de mantener, decisiones difíciles de revisar y procesos difíciles de continuar.
-
-Aunque los dominios cambien, ese problema suele repetirse.
-
-De ahí surge una pregunta:
-
-
-## ¿Qué debe permanecer para que un cambio siga siendo comprensible a través del tiempo?
-
-
-Gran parte de mi trabajo consiste en construir mecanismos para registrar, cerrar y preservar ejecuciones de forma que puedan seguir siendo observables y reconstruibles a través del tiempo.
-
-Las familias de artefactos publicadas aquí reúnen mecanismos construidos alrededor de distintas partes de esa pregunta.
-
-Representan condiciones, ejecuciones y evidencias preservadas alrededor de problemas específicos.
-
-Cada artefacto responde una pregunta acotada.
-
+Los mecanismos publicados exploran cómo preservar y verificar esas condiciones mediante **prototipos ejecutables, experimentos acotados y evidencia de sus resultados y límites**.
 
 ---
 
-## Navegación
+## Una investigación en evolución
 
-### ¿Qué debe ocurrir para que una estructura pueda persistir a través del tiempo?
+Las familias publicadas reflejan distintas preguntas que han ido ampliando la investigación.
 
-[CE — Conditions of Executability](#ce--conditions-of-executability)
+Cada familia aborda una dimensión específica del problema, con mecanismos y condiciones experimentales propias.
 
-### ¿Cómo se comporta un sistema frente a distintos estados operativos?
+| Familia | Pregunta que aborda |
+|---|---|
+| [**CE**](#ce--conditions-of-executability) | ¿Cómo registrar, cerrar y continuar estructuras persistentes? |
+| [**CPR**](#cpr--conditions-of-operational-regulation) | ¿Cuándo intervenir, retirarse, recuperar o reconsiderar una intervención? |
+| [**AF**](#af--artifact-qualification) | ¿Qué condiciones permiten reconocer y validar un artefacto? |
+| [**ENDO**](#endo--execution-history) | ¿Cómo preservar y reconstruir la trayectoria de una ejecución? |
 
-[CPR — Conditions of Operational Regulation](#cpr--conditions-of-operational-regulation)
+Estas familias no constituyen una secuencia técnica obligatoria. Cada una conserva su propio alcance y sus resultados corresponden a las condiciones en que fue ejecutada.
 
-### ¿Cuándo una unidad puede considerarse un artefacto?
+En conjunto, forman parte de una exploración más amplia: **cómo articular personas, IA, agentes y herramientas para crear, intervenir, verificar y continuar el trabajo sin perder orientación, límites ni capacidad de decisión.**
 
-[AF — Artifact Qualification](#af--artifact-qualification)
-
-### ¿Cómo puede observarse una ejecución después de que ocurrió?
-
-[ENDO — Execution History](#endo--execution-history)
-
+La investigación continúa también en mecanismos y entornos que todavía no forman parte de esta publicación.
 
 ---
 
-## CE — Conditions of Executability
+## Artefactos publicados
 
-CE reúne mecanismos mínimos para registrar, cerrar y continuar estructuras preservando su historia.
+### CE — Conditions of Executability
 
-Cada artefacto responde una condición distinta:
+Mecanismos mínimos para registrar, cerrar y continuar estructuras preservando su historia.
 
-**registro → cierre → continuidad**
+**Registro → cierre → continuidad**
 
 | Artefacto | Pregunta |
-|------------|------------|
+|---|---|
 | [CE-01](https://github.com/gamc-core/CE01-executable-structural-cell) | ¿Cómo registrar una unidad persistente y verificable? |
 | [CE-02](https://github.com/gamc-core/CE02-Deterministic-Cycle-Engine) | ¿Cómo cerrar un conjunto de unidades bajo una condición explícita? |
 | [CE-03](https://github.com/gamc-core/CE03-Generational-Structural-Runtime) | ¿Cómo continuar sin modificar lo ya cerrado? |
 
-
 ---
 
-## CPR — Conditions of Operational Regulation
+### CPR — Conditions of Operational Regulation
 
-CPR reúne ejecuciones orientadas a observar cómo un regulador modifica su comportamiento frente a distintos estados operativos.
+Ejecuciones experimentales para observar cómo un regulador responde ante distintos estados operativos.
 
-Cada artefacto preserva una condición operativa observada sobre un entorno Windows real.
+Los artefactos preservan condiciones observadas en un entorno Windows real.
 
-**intervención → retirada → recuperación → saturación → reconsideración**
+**Intervención → retirada → recuperación → saturación → reconsideración**
 
 | Artefacto | Pregunta |
-|------------|------------|
+|---|---|
 | [CPR-006](https://github.com/gamc-core/CPR-006-Homeostatic-regulation-with-structural-distinction) | ¿Dónde intervenir cuando la causa dominante no debe modificarse directamente? |
 | [CPR-009](https://github.com/gamc-core/CPR-009-Baseline-relative-withdrawal) | ¿Cuándo debe retirarse una intervención? |
 | [CPR-013](https://github.com/gamc-core/CPR-013-Confirmed-recovery-dissipative-memory) | ¿Cuándo puede considerarse recuperado un sistema? |
 | [CPR-014](https://github.com/gamc-core/CPR-014-Operational-Saturation-Clamp) | ¿Cuándo deja de tener sentido seguir interviniendo? |
 | [CPR-015](https://github.com/gamc-core/CPR-015-Post-clamp-meta-regulation) | ¿Cuándo debe reconsiderarse una detención previa? |
 
-
 ---
 
-## AF — Artifact Qualification
+### AF — Artifact Qualification
 
-AF explora las condiciones necesarias para que una unidad pueda calificarse como artefacto y los mecanismos utilizados para verificarlo.
+Condiciones y mecanismos para determinar si una unidad puede calificarse como artefacto y verificarlo.
 
-**protocolo → validación**
+**Protocolo → validación**
 
 | Artefacto | Pregunta |
-|------------|------------|
+|---|---|
 | [AF01](https://github.com/gamc-core/AF01-Artifact_Structural_Protocol) | ¿Qué condiciones debe cumplir una unidad para calificar como artefacto? |
 | [AF02](https://github.com/gamc-core/AF02-Artifact-Validator-Engine) | ¿Cómo verificar esas condiciones de forma determinista? |
 
-
 ---
 
-## ENDO — Execution History
+### ENDO — Execution History
 
-Ventana observable sobre la historia registrada por un sistema de ejecución persistente y cierre generacional.
+Ventana observable sobre la historia registrada por un sistema de ejecución persistente con cierre generacional.
 
 Cada generación conserva registros, estados y artefactos derivados sin modificar lo ya cerrado.
 
-**registro → generación → trayectoria**
+**Registro → generación → trayectoria**
 
 | Repositorio | Pregunta |
-|------------|------------|
+|---|---|
 | [ENDO](https://github.com/gamc-core/ENDO) | ¿Qué puede reconstruirse de una ejecución después de que fue registrada y cerrada? |
-
 
 ---
 
-## Alcance
+## Alcance y límites
 
 Los artefactos publicados permanecen accesibles en el estado en que fueron cerrados.
 
-Esta capa pública muestra preguntas, mecanismos, ejecuciones y evidencia derivada.
+Esta capa pública reúne mecanismos, ejecuciones y evidencia obtenida bajo condiciones específicas.
 
-No pretende describir la arquitectura completa ni la totalidad de sus procesos internos.
+**No representa la arquitectura completa de Arquitectura Simbiótica ni constituye un conjunto de productos terminados.**
 
-Tampoco pretende establecer modelos universales ni afirmar que las condiciones observadas sean válidas fuera de los contextos donde fueron ejecutadas.
+Los resultados documentados corresponden a sus contextos de ejecución. No establecen validez general ni garantizan el mismo comportamiento en otros entornos.
 
-Otras familias y mecanismos continúan en proceso de documentación o publicación.
+Otras familias y mecanismos continúan en investigación, documentación o preparación para su publicación.
 
 ---
 
-GAMC
+**GAMC · Lima, Perú**
+
+[LinkedIn](https://www.linkedin.com/in/gonzalo-montero-69285645/)
