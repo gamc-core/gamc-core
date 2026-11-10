@@ -1,114 +1,114 @@
 
-# Gonzalo Montero · Arquitectura Simbiótica
+# Gonzalo Montero · Arquitectura Simbiótica (AS)
 
-> Mecanismos experimentales de ejecución, verificación, continuidad y reconstrucción.
+> Experimental mechanisms for execution, verification, continuity, and reconstruction.
 
-Me interesa cómo las intenciones toman forma, atraviesan transformaciones y pueden continuar sin perder su historia.
+I am interested in how intentions take form, undergo transformations, and continue without losing their history.
 
-Parte de mi investigación consiste en construir y probar mecanismos para registrar ejecuciones, verificar sus condiciones y preservar suficiente información para comprender qué ocurrió, qué cambió y cómo continuar.
+Part of my research involves building and testing mechanisms to record executions, verify their conditions, and preserve enough information to understand what happened, what changed, and how to continue.
 
-El problema no es únicamente producir un resultado. Cuando se pierde la historia de cómo se produjo, las decisiones se vuelven difíciles de revisar, los sistemas de mantener y el trabajo de continuar.
+The problem is not merely producing a result. When the history of how it was produced is lost, decisions become difficult to review, systems become difficult to maintain, and work becomes difficult to continue.
 
-Los mecanismos publicados exploran cómo preservar y verificar esas condiciones mediante prototipos ejecutables, experimentos acotados y evidencia de sus resultados y límites.
+The published mechanisms explore how to preserve and verify these conditions through executable prototypes, bounded experiments, and evidence of their results and limitations.
 
 ---
 
-## Una investigación en evolución
+## An Evolving Research Effort
 
-Las familias publicadas reflejan distintas preguntas que han ido ampliando la investigación.
+The published families reflect different questions that have gradually expanded the research.
 
-Cada familia aborda una dimensión específica del problema, con mecanismos y condiciones experimentales propias.
+Each family addresses a specific dimension of the problem, with its own experimental mechanisms and conditions.
 
-| Familia | Pregunta que aborda |
+| Family | Question Addressed |
 |---|---|
-| [**CE**](#ce--conditions-of-executability) | ¿Cómo registrar, cerrar y continuar estructuras persistentes? |
-| [**CPR**](#cpr--conditions-of-operational-regulation) | ¿Cuándo intervenir, retirarse, recuperar o reconsiderar una intervención? |
-| [**AF**](#af--artifact-qualification) | ¿Qué condiciones permiten reconocer y validar un artefacto? |
-| [**ENDO**](#endo--execution-history) | ¿Cómo preservar y reconstruir la trayectoria de una ejecución? |
+| [**CE**](#ce--conditions-of-executability) | How can persistent structures be recorded, closed, and continued? |
+| [**CPR**](#cpr--conditions-of-operational-regulation) | When should an intervention occur, withdraw, recover, or be reconsidered? |
+| [**AF**](#af--artifact-qualification) | What conditions allow an artifact to be recognized and validated? |
+| [**ENDO**](#endo--execution-history) | How can the trajectory of an execution be preserved and reconstructed? |
 
-Estas familias no constituyen una secuencia técnica obligatoria. Cada una conserva su propio alcance y sus resultados corresponden a las condiciones en que fue ejecutada.
+These families do not constitute a mandatory technical sequence. Each retains its own scope, and its results correspond to the conditions under which it was executed.
 
-En conjunto, forman parte de una exploración más amplia: **cómo articular personas, IA, agentes y herramientas para crear, intervenir, verificar y continuar el trabajo sin perder orientación, límites ni capacidad de decisión.**
+Together, they form part of a broader exploration: **how to bring together people, AI, agents, and tools to create, intervene, verify, and continue work without losing orientation, boundaries, or the capacity to make decisions.**
 
-La investigación continúa también en mecanismos y entornos que todavía no forman parte de esta publicación.
+The research also continues through mechanisms and environments that are not yet part of this publication.
 
 ---
 
-## Artefactos publicados
+## Published Artifacts
 
 ### CE — Conditions of Executability
 
-Mecanismos mínimos para registrar, cerrar y continuar estructuras preservando su historia.
+Minimal mechanisms for recording, closing, and continuing structures while preserving their history.
 
-**Registro → cierre → continuidad**
+**Recording → closure → continuity**
 
-| Artefacto | Pregunta |
+| Artifact | Question |
 |---|---|
-| [CE-01](https://github.com/gamc-core/CE01-executable-structural-cell) | ¿Cómo registrar una unidad persistente y verificable? |
-| [CE-02](https://github.com/gamc-core/CE02-Deterministic-Cycle-Engine) | ¿Cómo cerrar un conjunto de unidades bajo una condición explícita? |
-| [CE-03](https://github.com/gamc-core/CE03-Generational-Structural-Runtime) | ¿Cómo continuar sin modificar lo ya cerrado? |
+| [CE-01](https://github.com/gamc-core/CE01-executable-structural-cell) | How can a persistent, verifiable unit be recorded? |
+| [CE-02](https://github.com/gamc-core/CE02-Deterministic-Cycle-Engine) | How can a set of units be closed under an explicit condition? |
+| [CE-03](https://github.com/gamc-core/CE03-Generational-Structural-Runtime) | How can execution continue without modifying what has already been closed? |
 
 ---
 
 ### CPR — Conditions of Operational Regulation
 
-Ejecuciones experimentales para observar cómo un regulador responde ante distintos estados operativos.
+Experimental executions to observe how a regulator responds to different operational states.
 
-Los artefactos preservan condiciones observadas en un entorno Windows real.
+The artifacts preserve conditions observed in a real Windows environment.
 
-**Intervención → retirada → recuperación → saturación → reconsideración**
+**Intervention → withdrawal → recovery → saturation → reconsideration**
 
-| Artefacto | Pregunta |
+| Artifact | Question |
 |---|---|
-| [CPR-006](https://github.com/gamc-core/CPR-006-Homeostatic-regulation-with-structural-distinction) | ¿Dónde intervenir cuando la causa dominante no debe modificarse directamente? |
-| [CPR-009](https://github.com/gamc-core/CPR-009-Baseline-relative-withdrawal) | ¿Cuándo debe retirarse una intervención? |
-| [CPR-013](https://github.com/gamc-core/CPR-013-Confirmed-recovery-dissipative-memory) | ¿Cuándo puede considerarse recuperado un sistema? |
-| [CPR-014](https://github.com/gamc-core/CPR-014-Operational-Saturation-Clamp) | ¿Cuándo deja de tener sentido seguir interviniendo? |
-| [CPR-015](https://github.com/gamc-core/CPR-015-Post-clamp-meta-regulation) | ¿Cuándo debe reconsiderarse una detención previa? |
+| [CPR-006](https://github.com/gamc-core/CPR-006-Homeostatic-regulation-with-structural-distinction) | Where should an intervention occur when the dominant cause must not be modified directly? |
+| [CPR-009](https://github.com/gamc-core/CPR-009-Baseline-relative-withdrawal) | When should an intervention be withdrawn? |
+| [CPR-013](https://github.com/gamc-core/CPR-013-Confirmed-recovery-dissipative-memory) | When can a system be considered recovered? |
+| [CPR-014](https://github.com/gamc-core/CPR-014-Operational-Saturation-Clamp) | When does continued intervention cease to make sense? |
+| [CPR-015](https://github.com/gamc-core/CPR-015-Post-clamp-meta-regulation) | When should a previous halt be reconsidered? |
 
 ---
 
 ### AF — Artifact Qualification
 
-Condiciones y mecanismos para determinar si una unidad puede calificarse como artefacto y verificarlo.
+Conditions and mechanisms for determining whether a unit qualifies as an artifact and verifying that qualification.
 
-**Protocolo → validación**
+**Protocol → validation**
 
-| Artefacto | Pregunta |
+| Artifact | Question |
 |---|---|
-| [AF01](https://github.com/gamc-core/AF01-Artifact_Structural_Protocol) | ¿Qué condiciones debe cumplir una unidad para calificar como artefacto? |
-| [AF02](https://github.com/gamc-core/AF02-Artifact-Validator-Engine) | ¿Cómo verificar esas condiciones de forma determinista? |
+| [AF01](https://github.com/gamc-core/AF01-Artifact_Structural_Protocol) | What conditions must a unit satisfy to qualify as an artifact? |
+| [AF02](https://github.com/gamc-core/AF02-Artifact-Validator-Engine) | How can those conditions be verified deterministically? |
 
 ---
 
 ### ENDO — Execution History
 
-Ventana observable sobre la historia registrada por un sistema de ejecución persistente con cierre generacional.
+An observable window into the history recorded by a persistent execution system with generational closure.
 
-Cada generación conserva registros, estados y artefactos derivados sin modificar lo ya cerrado.
+Each generation preserves records, states, and derived artifacts without modifying what has already been closed.
 
-**Registro → generación → trayectoria**
+**Recording → generation → trajectory**
 
-| Repositorio | Pregunta |
+| Repository | Question |
 |---|---|
-| [ENDO](https://github.com/gamc-core/ENDO) | ¿Qué puede reconstruirse de una ejecución después de que fue registrada y cerrada? |
+| [ENDO](https://github.com/gamc-core/ENDO) | What can be reconstructed from an execution after it has been recorded and closed? |
 
 ---
 
-## Alcance y límites
+## Scope and Limitations
 
-Los artefactos publicados permanecen accesibles en el estado en que fueron cerrados.
+The published artifacts remain accessible in the state in which they were closed.
 
-Esta capa pública reúne mecanismos, ejecuciones y evidencia obtenida bajo condiciones específicas.
+This public layer brings together mechanisms, executions, and evidence obtained under specific conditions.
 
-**No representa la arquitectura completa de Arquitectura Simbiótica ni constituye un conjunto de productos terminados.**
+**It does not represent the complete architecture of Arquitectura Simbiótica, nor does it constitute a collection of finished products.**
 
-Los resultados documentados corresponden a sus contextos de ejecución. No establecen validez general ni garantizan el mismo comportamiento en otros entornos.
+The documented results correspond to their execution contexts. They do not establish general validity or guarantee the same behavior in other environments.
 
-Otras familias y mecanismos continúan en investigación, documentación o preparación para su publicación.
+Other families and mechanisms remain under research, documentation, or preparation for publication.
 
 ---
 
-**GAMC · Lima, Perú**
+**GAMC · Lima, Peru**
 
 [LinkedIn](https://www.linkedin.com/in/gonzalo-montero-69285645/)
