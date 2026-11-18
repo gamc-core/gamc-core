@@ -1,36 +1,26 @@
-
 # Gonzalo Montero · Arquitectura Simbiótica (AS)
 
-> Experimental mechanisms for execution, verification, continuity, and reconstruction.
+Arquitectura Simbiótica is a research and design practice focused on building Habitable Environments where people, AI, agents, systems, and tools can work together, transform intentions into results, and retain their capacity for orientation, decision-making, and continuity.
 
-I am interested in how intentions take form, undergo transformations, and continue without losing their history.
+One of its central challenges is how to sustain understanding and the capacity to intervene as work becomes distributed across different actors, undergoes transformations, and grows in complexity.
 
-Part of my research involves building and testing mechanisms to record executions, verify their conditions, and preserve enough information to understand what happened, what changed, and how to continue.
+This space brings together part of that research: experimental mechanisms for the execution, regulation, verification, continuity, and reconstruction of work.
 
-The problem is not merely producing a result. When the history of how it was produced is lost, decisions become difficult to review, systems become difficult to maintain, and work becomes difficult to continue.
-
-The published mechanisms explore how to preserve and verify these conditions through executable prototypes, bounded experiments, and evidence of their results and limitations.
+Each research line addresses a specific dimension of this problem through executable artifacts, experiments, and evidence of their results and limitations.
 
 ---
 
-## An Evolving Research Effort
+## Research Lines
 
-The published families reflect different questions that have gradually expanded the research.
-
-Each family addresses a specific dimension of the problem, with its own experimental mechanisms and conditions.
-
-| Family | Question Addressed |
+| Research line | Question addressed |
 |---|---|
 | [**CE**](#ce--conditions-of-executability) | How can persistent structures be recorded, closed, and continued? |
-| [**CPR**](#cpr--conditions-of-operational-regulation) | When should an intervention occur, withdraw, recover, or be reconsidered? |
+| [**CPR**](#cpr--conditions-of-operational-regulation) | When should an intervention occur, withdraw, or be reconsidered? |
 | [**AF**](#af--artifact-qualification) | What conditions allow an artifact to be recognized and validated? |
 | [**ENDO**](#endo--execution-history) | How can the trajectory of an execution be preserved and reconstructed? |
+| [**AWR**](#awr--ai-work-receipt) | What can be independently checked about delegated work? |
 
-These families do not constitute a mandatory technical sequence. Each retains its own scope, and its results correspond to the conditions under which it was executed.
-
-Together, they form part of a broader exploration: **how to bring together people, AI, agents, and tools to create, intervene, verify, and continue work without losing orientation, boundaries, or the capacity to make decisions.**
-
-The research also continues through mechanisms and environments that are not yet part of this publication.
+Each research line retains its own scope. They do not constitute a mandatory technical sequence.
 
 ---
 
@@ -52,9 +42,7 @@ Minimal mechanisms for recording, closing, and continuing structures while prese
 
 ### CPR — Conditions of Operational Regulation
 
-Experimental executions to observe how a regulator responds to different operational states.
-
-The artifacts preserve conditions observed in a real Windows environment.
+Experiments examining how a regulator responds to different operational states in a real Windows environment.
 
 **Intervention → withdrawal → recovery → saturation → reconsideration**
 
@@ -70,7 +58,7 @@ The artifacts preserve conditions observed in a real Windows environment.
 
 ### AF — Artifact Qualification
 
-Conditions and mechanisms for determining whether a unit qualifies as an artifact and verifying that qualification.
+Conditions for recognizing a unit as an artifact and verifying whether those conditions are satisfied.
 
 **Protocol → validation**
 
@@ -83,9 +71,7 @@ Conditions and mechanisms for determining whether a unit qualifies as an artifac
 
 ### ENDO — Execution History
 
-An observable window into the history recorded by a persistent execution system with generational closure.
-
-Each generation preserves records, states, and derived artifacts without modifying what has already been closed.
+An observable window into a persistent execution system with generational closure. Each generation preserves records, states, and derived artifacts without modifying what has already been closed.
 
 **Recording → generation → trajectory**
 
@@ -95,17 +81,25 @@ Each generation preserves records, states, and derived artifacts without modifyi
 
 ---
 
-## Scope and Limitations
+### AWR — AI Work Receipt
 
-The published artifacts remain accessible in the state in which they were closed.
+An experimental format and offline verifier for examining evidence of AI-assisted and other delegated work.
 
-This public layer brings together mechanisms, executions, and evidence obtained under specific conditions.
+It distinguishes what can be checked, what is recorded, and what remains unknown, without requiring access to the original working environment.
 
-**It does not represent the complete architecture of Arquitectura Simbiótica, nor does it constitute a collection of finished products.**
+**Delegated work → evidence → verification**
 
-The documented results correspond to their execution contexts. They do not establish general validity or guarantee the same behavior in other environments.
+| Repository | Question |
+|---|---|
+| [AWR](https://github.com/gamc-core/AWR-AI-WORK-RECEIPT) | What can be independently checked about delegated work? |
 
-Other families and mechanisms remain under research, documentation, or preparation for publication.
+---
+
+## Scope
+
+The published artifacts are experimental constructions whose results correspond to specific conditions. Each documents its scope, behavior, and limitations.
+
+This collection represents part of Arquitectura Simbiótica. Its research and practice continue across other environments.
 
 ---
 
