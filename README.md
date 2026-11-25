@@ -1,15 +1,13 @@
 
 # Gonzalo Montero · Arquitectura Simbiótica (AS)
 
-What happens when we work with people, AI, agents, and tools, but it becomes increasingly difficult to understand what is happening, what has changed, or how to intervene?
+What happens when people, AI, agents, and tools work together, but it becomes difficult to understand what is happening, what has changed, or how to intervene?
 
-A task can begin with a simple intention and pass through many decisions, actions, and transformations. Different participants use tools, produce results, and leave information that others need to continue the work.
+A task can begin with a simple intention and pass through many decisions, actions, and transformations. Along the way, context can be lost, results may be difficult to verify, and stopping or continuing work can become a challenge.
 
-Along the way, difficulties can arise: losing context, not knowing what has been verified, being unable to stop an operation, or not understanding how a result was reached.
+Arquitectura Simbiótica is my research and design practice focused on building more habitable environments: spaces where people and systems can orient themselves, act, understand what is happening, and retain the ability to intervene and continue.
 
-Arquitectura Simbiótica is my research and design practice for addressing problems like these and building more habitable environments: spaces where people and systems can find their bearings, act, understand what is happening, and retain the ability to intervene and continue.
-
-This space brings together part of that research: experiments, structural mechanisms, execution systems, protocols, and tools addressing specific problems. Some are completed experiments preserved for examination; others are executable or reusable mechanisms. Each repository allows visitors to explore their behavior, results, and limitations.
+This GitHub profile presents one part of that practice, focused on problems of execution, regulation, verification, and continuity. It brings together experiments, mechanisms, protocols, and tools, some preserved for examination and others available to execute or reuse. Each repository documents its behavior, results, and limitations.
 
 ---
 
@@ -123,11 +121,11 @@ STOPPER distinguishes a request to stop, the worker's response, and what actuall
 
 ## Scope
 
-This collection is a public, examinable part of Arquitectura Simbiótica. It does not represent the entirety of its research and practice.
+Private records, working environments, and unpublished materials remain outside this public collection.
 
-Private records and materials remain outside this publication.
+The published artifacts serve different purposes and are not necessarily components of a single integrated system.
 
-The published constructions serve different purposes and have different degrees of independence. They are not necessarily components of a single integrated system.
+Public evidence supports examination of the documented results, not unrestricted claims about their behavior beyond the conditions tested.
 
 ---
 
