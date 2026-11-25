@@ -17,6 +17,8 @@ This space brings together part of that research: experiments, structural mechan
 
 **Where to start:** [Run a STOPPER example](https://github.com/gamc-core/STOPPER#try) to see what happens when a stop is requested, [examine evidence with AWR](https://github.com/gamc-core/AWR-AI-WORK-RECEIPT), or [explore CPR's regulation experiments](#cpr--conditions-of-operational-regulation).
 
+---
+
 | Area | Question addressed |
 |---|---|
 | [**CE**](#ce--conditions-of-executability) | How can persistent structures be recorded, closed, and continued? |
